@@ -8,20 +8,46 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:hint="Usuario"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_weight="1"
+            android:background="#df6dff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <EditText
-            android:hint="Contraseña"
+            android:layout_height="match_parent"></FrameLayout>
+        <FrameLayout
+            android:layout_weight="1"
+            android:background="#e9bef5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"></FrameLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/btn"
-        android:text="entrar"
+    <FrameLayout
+        android:background="@drawable/background_rect"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:textColor="#fff"
+            android:backgroundTint="#df6dff"
+            android:layout_marginTop="120dp"
+            android:id="@+id/btn"
+            android:text="entrar"
+            android:layout_gravity="center|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
 </FrameLayout>
