@@ -27,5 +27,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         tv_c.setTextColor(Color.BLUE);
+        tv_u.setAllCaps(true);
     }
 }
